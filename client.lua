@@ -681,7 +681,7 @@ local function useSlot(slot, noAnim)
 			elseif data.allowArmed then
 				useItem(data)
             else
-                return lib.notify({ id = 'cannot_perform', type = 'error', description = locale('cannot_perform') })
+                return lib.notify({ id = 'weapon_hand_forbidden', type = 'error', description = locale('weapon_hand_forbidden') })
 			end
 		elseif not data.ammo and not data.component then
 			useItem(data)
